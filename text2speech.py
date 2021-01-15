@@ -68,11 +68,11 @@ class T2S:
         self.waveglow = waveglow
 
         # load Weight HifiGan
-        h = None
-        with open(os.path.join(hparams.hifi_root_path, 'config.json')) as f:
-            data = f.read()
-            json_config = json.loads(data)
-            h = AttrDict(json_config)
+        # h = None
+        # with open(os.path.join(hparams.hifi_root_path, 'config.json')) as f:
+        #     data = f.read()
+        #     json_config = json.loads(data)
+        #     h = AttrDict(json_config)
 
         # self.generator = Generator(h).to(device)
         # state_dict_g = torch.load(os.path.join(hparams.hifi_root_path, 'generator'), map_location=device)
