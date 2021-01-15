@@ -8,7 +8,7 @@ waveglow_path = '/content/drive/MyDrive/voice_data/waveglow_78000'
 hifi_root_path = '/workspace/tts_models/hifigan_trained/'
 
 tacotron2_cp_path = '/content/drive/MyDrive/voice_data/checkpoint_42000'
-fastspeech2_cp_path = '/content/drive/MyDrive/voice_data/FS2_MFA_20200116_300k_char/ckpt/vlsp2020/checkpoint_880000.pth.tar'
+fastspeech2_cp_path = '/content/drive/MyDrive/voice_data/FS2_MFA_20210116_300k_char/ckpt/vlsp2020/checkpoint_880000.pth.tar'
 checkpoint_path = '/content/tts-web-demo/'
 
 dict_path = '/content/tts-web-demo/syllable_g2p.txt'
