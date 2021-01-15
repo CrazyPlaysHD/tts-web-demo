@@ -2,10 +2,10 @@ from text2speech import T2S
 import os
 
 model = 'tacotron2'
-vocoder = 'hifigan'
+vocoder = 'waveglow'
 t2s = T2S(model, vocoder)
 
-path = '/workspace/cuongnm55/tts_data/metadata.csv'
+path = '/content/tts-web-demo/metadata.csv'
 list_time = {
             'normalize': 0,
             'preprocess': 0,
@@ -33,9 +33,9 @@ with open(path, 'r', encoding='utf-8') as rf:
             text = line.split('|')[-1]
             audio = t2s.pts(text, list_time, dict_input)
             audio_path = f"{filename}.wav"
-            save_path = os.path.join('/workspace/cuongnm55/tts_data/wavs', audio_path)
+            save_path = os.path.join('/content/tts_data/wavs', audio_path)
             t2s.save_audio(audio, save_path)
-            with open(os.path.join('/workspace/cuongnm55/tts_data/wavs/', filename + '.txt'), 'w', encoding='utf8') as wf:
+            with open(os.path.join('/content/tts_data/wavs/', filename + '.txt'), 'w', encoding='utf8') as wf:
                 wf.write(text.strip())
             dem += 1
             if dem % 100 == 0:

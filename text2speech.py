@@ -74,11 +74,12 @@ class T2S:
             json_config = json.loads(data)
             h = AttrDict(json_config)
 
-        self.generator = Generator(h).to(device)
-        state_dict_g = torch.load(os.path.join(hparams.hifi_root_path, 'generator'), map_location=device)
-        self.generator.load_state_dict(state_dict_g['generator'])
-        self.generator.eval()
-        self.generator.remove_weight_norm()
+        # self.generator = Generator(h).to(device)
+        # state_dict_g = torch.load(os.path.join(hparams.hifi_root_path, 'generator'), map_location=device)
+        # self.generator.load_state_dict(state_dict_g['generator'])
+        # self.generator.eval()
+        # self.generator.remove_weight_norm()
+        self.generator = None
 
         self.denoiser = Denoiser(waveglow)
 

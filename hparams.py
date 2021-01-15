@@ -1,17 +1,17 @@
 dataset = "vlsp2020"
 data_path = '/content/vlsp2020/'
 name_task = 'FastSpeech2'  # 'FastSpeech2'
-waveglow_path = '/workspace/tts_models/waveglow_78000'
+waveglow_path = '/content/drive/MyDrive/voice_data/waveglow_78000'
 # hifigan_path = '/u01/os_chatbot/tts_fastspeech-master/hifigan_78000'
 
 # hifi_root_path = '/workspace/tts_models/hifigan_pretrained/pretrained/LJ_V1/'
 hifi_root_path = '/workspace/tts_models/hifigan_trained/'
 
-tacotron2_cp_path = '/workspace/tts_models/checkpoint_38000.pth.tar'
-fastspeech2_cp_path = '/workspace/tts_models/checkpoint_660000.pth.tar'
-checkpoint_path = '/workspace/tts_models/'
+tacotron2_cp_path = '/content/drive/MyDrive/voice_data/checkpoint_42000'
+fastspeech2_cp_path = '/content/drive/MyDrive/voice_data/FS2_MFA_20200116_300k_char/ckpt/vlsp2020/checkpoint_880000.pth.tar'
+checkpoint_path = '/content/tts-web-demo/'
 
-dict_path = '/workspace/tts_models/syllable_g2p.txt'
+dict_path = '/content/tts-web-demo/syllable_g2p.txt'
 # Text
 # text_cleaners = ['basic_cleaners']
 text_cleaners = []
